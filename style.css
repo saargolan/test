@@ -1,0 +1,46 @@
+.carousel {
+    margin: auto;
+    margin-top: 3ex;
+    margin-bottom: 3ex;
+  }
+
+  body{
+      background-color: #f1f3f8;
+  }
+
+ .navbar{
+     background-color: #8d93ab;
+ }
+
+ .card, .list-group-item{
+     background-color: #FFF5DE;
+     color: #64687B;
+ }
+
+ #index>.list-group-item:hover{
+    border-top-color: #64687B;
+    border-top-width: 1px;
+    color: #64687B;
+ }
+
+
+ .nav-item > a, .navbar-toggler, .navbar-toggler:focus, .navbar-toggler-icon{
+    color:#f1f3f8;
+    border-color: rgba(241,243,248, 0.5);
+    outline-width: 0px;
+    outline-color: transparent;
+}
+ /* change the background color */
+.nav-item > a:hover{
+    color:#d6e0f0;
+
+}
+
+.nav-item > a.active{
+    color: #FFEECA;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(241,243,248, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+

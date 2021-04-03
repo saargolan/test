@@ -1,81 +1,147 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <style>
-        table, th, td {
-          border: 1px solid black;
-          border-collapse: collapse;
-        }
-        th, td {
-          padding: 5px;
-        }
-        th {
-          text-align: left;
-        }
-    </style>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      <link rel="stylesheet" href="./style.css">
     <title>Noy Maman</title>
   </head>
   
   <body>
-    <div class="topnav">
-        <a href="./index.html">Home</a>
-        <a href="./saarPersonal.html">Saar Golan</a>
-        <a href="./roniPersonal.html">Roni Nadler</a>
-        <a href="./noyPersonal.html">Noy Maman</a>
+    <nav class="navbar navbar-expand-lg">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-tabs navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./saarPersonal.html">Saar Golan</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./roniPersonal.html">Roni Nadler</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link active" href="./noyPersonal.html">Noy Maman</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div id="carouselExampleIndicators" class="carousel slide carousel-fade col-md-10 col-lg-6" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="view">
+                <img class="d-block w-100 img" src="./images/noy1.jpg" alt="First slide">
+                <div class="mask rgba-black-light"></div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="view">
+                <img class="d-block w-100" src="./images/noy2.jpg" alt="First slide">
+                <div class="mask rgba-black-light"></div>
+              </div>
+          </div>
+          <div class="carousel-item">
+            <div class="view">
+                <img class="d-block w-100" src="./images/noy3.jpg" alt="First slide">
+                <div class="mask rgba-black-light"></div>
+              </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+<div class="container col-lg-6 col-md-10">
+      <div class="container card" style="margin-bottom: 3ex;">
+      <div class="card-body">
+          <div class="row">
+              <div class="col-sm-6">
+                  <h6 class="mb-0">Full Name</h6>
+                </div>
+                <div class="col-sm-6 text-secondary">Noy Maman</div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-sm-6">
+                    <h6 class="mb-0">Age</h6>
+                </div>
+                <div class="col-sm-6 text-secondary">26</div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-sm-6">
+                    <h6 class="mb-0">Department</h6>
+                </div>
+                <div class="col-sm-6 text-secondary">Software Engineering</div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-sm-6">
+                    <h6 class="mb-0">Email</h6>
+                </div>
+                <div class="col-sm-6 text-secondary">mamanoy2849@gmail.com</div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-sm-6">
+                    <h6 class="mb-0">City</h6>
+                </div>
+                <div class="col-sm-6 text-secondary">Kiryat-Ata</div>
+            </div>
+        </div>
     </div>
-    <div>
-        <h1>Noy Maman</h1>
-        <h3>Personal Info</h3>
-            <table>
-                <tr>
-                    <th>Age</th>
-                    <td>26</td>
-                </tr>
-                <tr>
-                    <th>Gender</th>
-                    <td>female</td>
-                </tr>
-                <tr>
-                    <th>City</th>
-                    <td>Kiryat-Ata</td>
-                </tr>
-                <tr>
-                    <th>Department</th>
-                    <td>Software Engineering</td>
-                </tr>
-                <tr>
-                    <th>Email</th>
-                    <td>mamanoy2849@gmail.com</td>
-                </tr>
-            </table>
-        <h3>Hobbies</h3>
-        <ul>
-            <li>Dance</li>
-            <li>Drawing</li>
-            <li>Make Up</li>
-        </ul>
-
-        <h3>Courses</h3>
-        <ul>
-            <li>
-            Cloud Computing
-            </li>
-            <li>
-            Compilation Theory
-            </li>
-            <li>
-                Computer Networks
-            </li>
-            <li>
-                Final Project
-            </li>
-            <li>
-                Information Security and Cryptology
-            </li>
-            <li>
-                Verification of Digital systems
-            </li>
-        </ul>
-    </div>
+    <div class="row gutters-sm">
+        <div class="col-sm-6 mb-3">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h6 class="d-flex align-items-center mb-3">
+                        <i class="material-icons text-info mr-2">Hobbies</i></h6> 
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Dance</li>
+                            <li class="list-group-item">Drawing</li>
+                            <li class="list-group-item">Make Up</li>
+                          </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 mb-3">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h6 class="d-flex align-items-center mb-3">
+                            <i class="material-icons text-info mr-2">Courses</i></h6> 
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Final Projetct</li>
+                                <li class="list-group-item">Cloud Computing</li>
+                                <li class="list-group-item">Compilation Theory</li>
+                                <li class="list-group-item">Information Security and Cryptology</li>
+                                <li class="list-group-item">Verification of Digital systems</li>
+                                <li class="list-group-item">Computer Networks</li>
+                              </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
