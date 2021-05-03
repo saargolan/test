@@ -1,31 +1,11 @@
-/*------------------------------------------------------------------
-    IMPORT FONTS
--------------------------------------------------------------------*/
-
-@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800");
-@import url("https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700");
-
-/*
-
-    font-family: 'Poppins', sans-serif;
-
-    font-family: 'Dosis', sans-serif;
-
-*/
-
-/*------------------------------------------------------------------
-    IMPORT FILES
--------------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
 @import url(all.css); /*font awesome icons*/
 @import url(bootsnav.css);
 
-/*------------------------------------------------------------------
-    SKELETON
--------------------------------------------------------------------*/
 body {
   color: #666666;
   font-size: 15px;
-  font-family: "Dosis", sans-serif;
+  font-family: "Pangolin", sans-serif;
   line-height: 1.80857;
 }
 a {
@@ -514,7 +494,6 @@ nav.navbar.bootsnav ul.nav li.megamenu-fw > a:hover {
   opacity: 0.5;
 }
 .cover-slides h1 {
-  font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 64px;
   color: #fff;
@@ -650,7 +629,6 @@ nav.navbar.bootsnav ul.nav li.megamenu-fw > a:hover {
 }
 .why-text h5 {
   font-size: 18px;
-  font-family: "Poppins", sans-serif;
   padding: 4px;
   display: inline-block;
   background: #b0b435;
@@ -1406,16 +1384,20 @@ nav.navbar.bootsnav ul.nav li.megamenu-fw > a:hover {
 .contact-info-left h2 {
   font-size: 22px;
   font-weight: 700;
+  color: white;
 }
 .contact-info-left p {
   margin-bottom: 15px;
+  color: white;
 }
 .contact-info-left ul li {
   margin-bottom: 12px;
+  color: white;
 }
 .contact-info-left ul li p {
   font-size: 16px;
   color: #222222;
+  color: white;
   font-weight: 300;
   padding-right: 16px;
   padding-left: 25px;
@@ -1429,6 +1411,10 @@ nav.navbar.bootsnav ul.nav li.megamenu-fw > a:hover {
   padding-right: 6px;
   color: #b0b435;
 }
+.contact-info-left ul li p a{
+  color: white;
+}
+
 .contact-info-left ul li p a:hover {
   color: #b0b435;
 }
