@@ -16,16 +16,8 @@
 /*------------------------------------------------------------------
     IMPORT FILES
 -------------------------------------------------------------------*/
-@import url(all.css);
-@import url(superslides.css);
-@import url(bootstrap-select.css);
-@import url(carousel-ticker.css);
-@import url(code_animate.css);
+@import url(all.css); /*font awesome icons*/
 @import url(bootsnav.css);
-@import url(owl.carousel.min.css);
-@import url(jquery-ui.css);
-@import url(nice-select.css);
-@import url(baguetteBox.min.css);
 
 /*------------------------------------------------------------------
     SKELETON
@@ -157,7 +149,7 @@ p {
 .bootstrap-select .dropdown-toggle:focus {
   box-shadow: none !important;
 }
-/*------------------------------------------------------------------ LOADER -------------------------------------------------------------------*/
+/* ------------------------------------------------------------------ LOADER -------------------------------------------------------------------
 #back-to-top {
   position: fixed;
   bottom: 40px;
@@ -175,10 +167,10 @@ p {
   text-decoration: none;
   transition: opacity 0.2s ease-out;
   font-size: 28px;
-}
+} */
 /*------------------------------------------------------------------ HEADER -------------------------------------------------------------------*/
 
-.bootstrap-select.btn-group .dropdown-menu {
+/* .bootstrap-select.btn-group .dropdown-menu {
   border: none;
   padding: 0px;
   border-radius: 0px;
@@ -190,7 +182,7 @@ p {
   span.dropdown-item-inner
   span.text {
   font-size: 13px;
-}
+} */
 
 .main-header {
 }
@@ -594,11 +586,6 @@ nav.navbar.bootsnav ul.nav li.megamenu-fw > a:hover {
   padding: 12px 0px;
 }
 
-.offer-box {
-  position: relative;
-  overflow: hidden;
-}
-
 /*------------------------------------------------------------------ Products -------------------------------------------------------------------*/
 .title-all {
   margin-bottom: 30px;
@@ -617,22 +604,6 @@ nav.navbar.bootsnav ul.nav li.megamenu-fw > a:hover {
 }
 .special-menu {
   margin-bottom: 40px;
-}
-.filter-button-group {
-  display: inline-block;
-}
-.filter-button-group button {
-  background: #b0b435;
-  color: #ffffff;
-  border: none;
-  cursor: pointer;
-  padding: 5px 30px;
-  font-size: 18px;
-}
-.filter-button-group button.active {
-  background: #000000;
-}
-.filter-button-group button {
 }
 .products-single {
   overflow: hidden;
