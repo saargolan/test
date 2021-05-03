@@ -37,67 +37,67 @@
 
 	$(".cover-slides ul li").append("<div class='overlay-background'></div>");
 
-	/* ..............................................
-	   Map Full
-	   ................................................. */
+	// /* ..............................................
+	//    Map Full
+	//    ................................................. */
 
-	$(document).ready(function() {
-		$(window).on('scroll', function() {
-			if ($(this).scrollTop() > 100) {
-				$('#back-to-top').fadeIn();
-			} else {
-				$('#back-to-top').fadeOut();
-			}
-		});
-		$('#back-to-top').click(function() {
-			$("html, body").animate({
-				scrollTop: 0
-			}, 600);
-			return false;
-		});
-	});
+	// $(document).ready(function() {
+	// 	$(window).on('scroll', function() {
+	// 		if ($(this).scrollTop() > 100) {
+	// 			$('#back-to-top').fadeIn();
+	// 		} else {
+	// 			$('#back-to-top').fadeOut();
+	// 		}
+	// 	});
+	// 	$('#back-to-top').click(function() {
+	// 		$("html, body").animate({
+	// 			scrollTop: 0
+	// 		}, 600);
+	// 		return false;
+	// 	});
+	// });
 
-	/* ..............................................
-	   Special Menu
-	   ................................................. */
+	// /* ..............................................
+	//    Special Menu
+	//    ................................................. */
 
-	var Container = $('.container');
-	Container.imagesLoaded(function() {
-		var portfolio = $('.special-menu');
-		portfolio.on('click', 'button', function() {
-			$(this).addClass('active').siblings().removeClass('active');
-			var filterValue = $(this).attr('data-filter');
-			$grid.isotope({
-				filter: filterValue
-			});
-		});
-		var $grid = $('.special-list').isotope({
-			itemSelector: '.special-grid'
-		});
-	});
+	// var Container = $('.container');
+	// Container.imagesLoaded(function() {
+	// 	var portfolio = $('.special-menu');
+	// 	portfolio.on('click', 'button', function() {
+	// 		$(this).addClass('active').siblings().removeClass('active');
+	// 		var filterValue = $(this).attr('data-filter');
+	// 		$grid.isotope({
+	// 			filter: filterValue
+	// 		});
+	// 	});
+	// 	var $grid = $('.special-list').isotope({
+	// 		itemSelector: '.special-grid'
+	// 	});
+	// });
 
-	/* ..............................................
-	   BaguetteBox
-	   ................................................. */
+	// /* ..............................................
+	//    BaguetteBox
+	//    ................................................. */
 
-	baguetteBox.run('.tz-gallery', {
-		animation: 'fadeIn',
-		noScrollbars: true
-	});
+	// baguetteBox.run('.tz-gallery', {
+	// 	animation: 'fadeIn',
+	// 	noScrollbars: true
+	// });
 
-	/* ..............................................
-	   Offer Box
-	   ................................................. */
+	// /* ..............................................
+	//    Offer Box
+	//    ................................................. */
 
-	$('.offer-box').inewsticker({
-		speed: 3000,
-		effect: 'fade',
-		dir: 'ltr',
-		font_size: 13,
-		color: '#ffffff',
-		font_family: 'Montserrat, sans-serif',
-		delay_after: 1000
-	});
+	// $('.offer-box').inewsticker({
+	// 	speed: 3000,
+	// 	effect: 'fade',
+	// 	dir: 'ltr',
+	// 	font_size: 13,
+	// 	color: '#ffffff',
+	// 	font_family: 'Montserrat, sans-serif',
+	// 	delay_after: 1000
+	// });
 
 	/* ..............................................
 	   Tooltip
@@ -107,110 +107,31 @@
 		$('[data-toggle="tooltip"]').tooltip();
 	});
 
-	/* ..............................................
-	   Owl Carousel Instagram Feed
-	   ................................................. */
+	// /* ..............................................
+	//    Slider Range
+	//    ................................................. */
 
-	$('.main-instagram').owlCarousel({
-		loop: true,
-		margin: 0,
-		dots: false,
-		autoplay: true,
-		autoplayTimeout: 3000,
-		autoplayHoverPause: true,
-		navText: ["<i class='fas fa-arrow-left'></i>", "<i class='fas fa-arrow-right'></i>"],
-		responsive: {
-			0: {
-				items: 2,
-				nav: true
-			},
-			600: {
-				items: 3,
-				nav: true
-			},
-			1000: {
-				items: 5,
-				nav: true,
-				loop: true
-			}
-		}
-	});
+	// $(function() {
+	// 	$("#slider-range").slider({
+	// 		range: true,
+	// 		min: 0,
+	// 		max: 4000,
+	// 		values: [1000, 3000],
+	// 		slide: function(event, ui) {
+	// 			$("#amount").val("$" + ui.values[0] + " - $" + ui.values[1]);
+	// 		}
+	// 	});
+	// 	$("#amount").val("$" + $("#slider-range").slider("values", 0) +
+	// 		" - $" + $("#slider-range").slider("values", 1));
+	// });
 
-	/* ..............................................
-	   Featured Products
-	   ................................................. */
+	// /* ..............................................
+	//    NiceScroll
+	//    ................................................. */
 
-	$('.featured-products-box').owlCarousel({
-		loop: true,
-		margin: 15,
-		dots: false,
-		autoplay: true,
-		autoplayTimeout: 3000,
-		autoplayHoverPause: true,
-		navText: ["<i class='fas fa-arrow-left'></i>", "<i class='fas fa-arrow-right'></i>"],
-		responsive: {
-			0: {
-				items: 1,
-				nav: true
-			},
-			600: {
-				items: 3,
-				nav: true
-			},
-			1000: {
-				items: 4,
-				nav: true,
-				loop: true
-			}
-		}
-	});
-
-	/* ..............................................
-	   Scroll
-	   ................................................. */
-
-	$(document).ready(function() {
-		$(window).on('scroll', function() {
-			if ($(this).scrollTop() > 100) {
-				$('#back-to-top').fadeIn();
-			} else {
-				$('#back-to-top').fadeOut();
-			}
-		});
-		$('#back-to-top').click(function() {
-			$("html, body").animate({
-				scrollTop: 0
-			}, 600);
-			return false;
-		});
-	});
-
-
-	/* ..............................................
-	   Slider Range
-	   ................................................. */
-
-	$(function() {
-		$("#slider-range").slider({
-			range: true,
-			min: 0,
-			max: 4000,
-			values: [1000, 3000],
-			slide: function(event, ui) {
-				$("#amount").val("$" + ui.values[0] + " - $" + ui.values[1]);
-			}
-		});
-		$("#amount").val("$" + $("#slider-range").slider("values", 0) +
-			" - $" + $("#slider-range").slider("values", 1));
-	});
-
-	/* ..............................................
-	   NiceScroll
-	   ................................................. */
-
-	$(".brand-box").niceScroll({
-		cursorcolor: "#9b9b9c",
-	});
+	// $(".brand-box").niceScroll({
+	// 	cursorcolor: "#9b9b9c",
+	// });
 	
 	
 }(jQuery));

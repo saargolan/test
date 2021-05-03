@@ -17,15 +17,16 @@
     IMPORT FILES
 -------------------------------------------------------------------*/
 @import url(all.css);
-@import url(superslides.css);
 @import url(bootstrap-select.css);
-@import url(carousel-ticker.css);
-@import url(code_animate.css);
+/* @import url(superslides.css);
+
+@import url(carousel-ticker.css); */
+/* @import url(code_animate.css); */
 @import url(bootsnav.css);
-@import url(owl.carousel.min.css);
+/* @import url(owl.carousel.min.css);
 @import url(jquery-ui.css);
-@import url(nice-select.css);
-@import url(baguetteBox.min.css);
+@import url(nice-select.css); */
+/* @import url(baguetteBox.min.css); */
 
 /*------------------------------------------------------------------
     SKELETON
@@ -617,22 +618,6 @@ nav.navbar.bootsnav ul.nav li.megamenu-fw > a:hover {
 }
 .special-menu {
   margin-bottom: 40px;
-}
-.filter-button-group {
-  display: inline-block;
-}
-.filter-button-group button {
-  background: #b0b435;
-  color: #ffffff;
-  border: none;
-  cursor: pointer;
-  padding: 5px 30px;
-  font-size: 18px;
-}
-.filter-button-group button.active {
-  background: #000000;
-}
-.filter-button-group button {
 }
 .products-single {
   overflow: hidden;
